@@ -23,7 +23,7 @@ swal({
     '<li>After that, it`s the next player`s turn </li>'+
     '<li>The first player to reach winning points on GLOBAL score wins the game </li>' +
     '<li>Players can set a number of games to win and the final score </li> </ul>',
-    imageUrl: '43530034-cute-pig-cartoon.jpg',
+    imageUrl: 'img/43530034-cute-pig-cartoon.jpg',
     imageWidth: 250,
     imageHeight: 200,
     imageAlt: 'Pig image',
@@ -74,8 +74,7 @@ function start () {
     panelPlayer2.classList.remove (`winner`);
     document.getElementById ('dices').hidden = true;
     flag = true;
-    //countGames1 = 0;
-    //countGames2 = 0;
+    
 };
 //when Roll Dice buton is clicked
 //and not delay beetwen switch
@@ -84,8 +83,8 @@ if (flag) {
 document.getElementById ('dices').hidden = false;
 let num1 = randomIndPic ();
 let num2 = randomIndPic ();
-dice1.src = `dice-${num1}.png`;
-dice2.src = `dice-${num2}.png`;
+dice1.src = `img/dice-${num1}.png`;
+dice2.src = `img/dice-${num2}.png`;
 //if rolls not 1
 if (num1 != 1 && num2 !=1) { 
     sumCur += num1 + num2;
@@ -202,7 +201,7 @@ if (document.getElementById ('games1').checked) {
 document.querySelector ('.btn-hold').addEventListener ('click', function (e) {
     switchPlayers (); 
 });
-// New game pressed
+// New game button pressed
 document.querySelector ('.btn-new').addEventListener ('click', function (e) {
     start();
 });

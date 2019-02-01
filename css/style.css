@@ -1,6 +1,3 @@
-/**********************************************
-*** GENERAL
-**********************************************/
 
 * {
     margin: 0;
@@ -16,7 +13,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(../img/back.jpg);
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -202,7 +199,6 @@ i {
     color: #EB4D4D;
 }
 .winner { 
-/*     background-color: #f0c7d7;  */
     background-image: url('http://kartinki.vip/uploads/posts/2017-10/1506807286_578-prazdnichnyy-salyut.gif');
 }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
